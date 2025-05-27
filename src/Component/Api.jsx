@@ -32,9 +32,15 @@ function Api() {
             <p className="mb-3 font-normal text-gray-700  line-clamp-2">
               {product.description}
             </p>
+            <div className='flex justify-between'>
             <p className="mb-3 font-bold text-gray-900 ">
-              ${product.price.toFixed(2)}
+              ${product.price}
             </p>
+            <div className='flex '>
+                <img className='w-4 h-4  m-1' src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" alt="" />
+                 <p className='font-bold text-gray-900'> {product.rating.rate}</p>
+            </div>
+            </div>
             <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-orange-100 rounded-lg hover:bg-orange-300 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
                more
               <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
